@@ -1,0 +1,57 @@
+<div class="container-fluid">
+		<div class="menu">
+			<div class="button">Home</div> 
+			<div class="button">Search Shelters</div>
+			<div class="button">Check In</div>
+		</div>
+		<div class="content">
+			<div class="col-md-7">
+			<h1>{{shelter.name}} Check in/out Tool</h1><br>
+				<div class="login">
+					<form class="form-horizontal check-in-spacing" role="form">
+						<div class="form-group">
+							<label for="inputProposalname"
+							class="col-lg-3 control-label vcenter">User ID</label>
+							<div class="col-lg-7">
+								<input type="text" class="form-control" maxlength="255"
+								required="required" id="email" placeholder="ID" />
+								<button id="genID" type="submit" class="btn btn-default">Generate ID</button>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="form-group">
+							<label for="inputClientId" class="col-lg-3 control-label vcenter">Type</label>
+							<div class="col-lg-7">
+								<select class="form-control" id="clienttype">
+									{{#each homeless_types}}
+									<option value="{{this.id}}">{{this.name}}</option>
+									{{/each}}
+								</select>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="form-group">
+							<label for="inputUpdateddatetime" class="col-lg-3 control-label vcenter">Number of Beds</label>
+							<div class="col-lg-7">
+								<input id="beds" type="Number" class="form-control" required="required"
+								id="updateddatetime" placeholder="Beds">
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="form-group">
+							<div class="col-lg-offset-3 col-lg-7">
+								<button id="checkin" type="submit" class="btn btn-default col-lg-5">Check In</button>
+								<button id="checkout" type="submit" class="btn btn-default col-lg-offset-2 col-lg-5">Check Out</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-5">
+			<h3>Shelter Availability</h3><br>
+				<div class="current-data">
+					<table id="myTable" class="display"></table>
+				</div>
+			</div>
+		</div>
+	</div>

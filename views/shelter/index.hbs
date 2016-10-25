@@ -1,0 +1,39 @@
+<div class="container-fluid">
+		<div class="menu">
+		  <div class="button">Home</div> 
+		  <div class="button">Search Shelters</div>
+		  <div class="button">Check In</div>
+		</div>
+		<div class="container-fluid">
+			<div id="mc-left" class="col-xs-12 col-md-7 cols">
+			<h1 id="shelter-name">{{shelter.name}}</h1>
+				<div>
+					<h3>Contact Information</h3>
+					Address: <a href="https://www.google.com/maps/place/{{shelter.street}},+{{shelter.city}},+{{shelter.state}}+{{shelter.zip}}/" target="_blank" class="map">{{shelter.street}} {{shelter.city}}</a><br>
+					Phone Number: <a href="#" class="phone-number">{{shelter.phone}}</a><br>
+					Website: <a href="{{shelter.website}}" target="_blank">{{shelter.name}} Website</a><br>
+					Opens: <span class="time">{{shelter.open}}</span><br>
+					Closes: <span class="time">{{shelter.close}}</span>
+
+					<h3>Services Provided</h3>
+					<ul>
+						<li>Overnight Housing - Men, Women, Family</li>
+						<li>Career Help</li>
+						<li>Food Stamps Assistance</li>
+						<li>Medical Assistance</li>
+					</ul>
+				</div>
+			</div>
+			<div id="mc-right" class="col-xs-12 col-md-5 cols">
+				<div>
+					<h3>Shelter Availability</h3><br>
+					<div>
+						<div class="table-wrapper">
+							<table id="myTable" class="display dataTable dtr-inline"> 
+						</div>
+					</table> 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

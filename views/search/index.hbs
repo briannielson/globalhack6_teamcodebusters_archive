@@ -1,0 +1,41 @@
+	<div class="menu">
+		<div class="button">Home</div> 
+		<div class="button">Search Shelters</div>
+		<div class="button">Check In</div>
+	</div>
+	<div class="container-fluid col-md-10 col-md-offset-1">
+		<h1>Shelter Searcher Tool</h1>
+		<div class="center" id="city-search-block">
+			Type:   
+			<select>
+				<option value=""></option>
+				<option value="st-louis">24-hour</option>
+				<option value="detroit">Emergency</option>
+				<option value="los-angeles">Women Only</option>
+				<option value="phoenix">Youth Only</option>
+			</select>
+			<br>
+			<button id="submit-button"class="btn btn-default">Search</button>
+			<button class="btn btn-default">Refresh</button>
+		</div>
+	</div>
+	<div id="table-view" class="table-wrapper container-fluid col-md-10 col-md-offset-1">
+		<div>
+			<table id="myTable" class="display dataTable dtr-inline" > 
+				<thead>
+					<tr>Shelter Name</tr>
+					<tr>Bed Availability</tr>
+					<tr>Shelter Location</tr>
+					<tr>Shelter Type(s)</tr>
+					<tr>Shelter Phone</tr>
+					<tr>Shelter Website</tr>
+					<tr>Current Distance From Shelter</tr>
+				</thead>
+				<tbody>
+					{{#each shelters}}
+					<tr>Gateway Homeless Services,	15,	1000 N 19th Street	24-hour emergency housing	(314) 213-1515	Gateway Homeless Services Website	1.8 miles</tr>
+					{{/each}}
+				</tbody>
+			</table> 
+		</div>
+	</div>

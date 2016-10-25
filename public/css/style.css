@@ -1,0 +1,50 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: white;
+  margin-top: 25px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.menu {
+	height: 40px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: #5F79E8;
+	top:0;
+	z-index: 10;
+	position: fixed;
+	padding: 0px;
+}
+.button {
+	background-color: #6581F7;
+	border: none;
+	color: white;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	float: left;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-right: 1px;
+	margin-left: 1px;
+
+}
+
+.button:hover {
+	background-color: #185E96;
+	
+}
+
+
+
+
